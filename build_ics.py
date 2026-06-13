@@ -8,11 +8,58 @@ build_ics.py  —  تقويم كأس العالم ٢٠٢٦ (تحديث تلقا�
 يشتغل تلقائياً عبر GitHub Actions يومياً. ما يحتاج أي تدخل يدوي.
 """
 
-import json, re, urllib.request
+import json, re, urllib.request, csv, io
+from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
 SOURCE = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+H2H_SOURCE = "https://raw.githubusercontent.com/martj42/international_results/master/results.csv"
 OUT = "worldcup2026.ics"
+
+# ---------- تحميل السجل التاريخي للمواجهات بين المنتخبات ----------
+def load_h2h():
+    """يحمّل كل المباريات الدولية ويرتّبها حسب زوج الفريقين."""
+    h2h = defaultdict(list)
+    try:
+        with urllib.request.urlopen(H2H_SOURCE, timeout=30) as r:
+            text = r.read().decode("utf-8")
+        for row in csv.DictReader(io.StringIO(text)):
+            if row["home_score"] in ("NA","") or row["away_score"] in ("NA",""):
+                continue
+            key = frozenset([row["home_team"], row["away_team"]])
+            h2h[key].append(row)
+    except Exception as e:
+        print("تحذير: تعذّر تحميل السجل التاريخي:", e)
+    return h2h
+
+def h2h_text(a, b, h2h):
+    """يبني سطر السجل التاريخي بين منتخبين (إنجليزي)."""
+    # مطابقة الأسماء المختلفة بين المصدرين
+    NAME_MAP = {
+        "Czechia": "Czech Republic", "USA": "United States",
+        "Turkiye": "Turkey", "Curacao": "Curaçao",
+    }
+    a = NAME_MAP.get(a, a)
+    b = NAME_MAP.get(b, b)
+    matches = h2h.get(frozenset([a, b]), [])
+    if not matches:
+        return "First-ever meeting between the two teams"
+    wa = wb = draws = 0
+    for m in matches:
+        try:
+            hs, as_ = int(m["home_score"]), int(m["away_score"])
+        except ValueError:
+            continue
+        if hs == as_:
+            draws += 1
+        else:
+            winner = m["home_team"] if hs > as_ else m["away_team"]
+            if winner == a: wa += 1
+            else: wb += 1
+    last = matches[-1]
+    line1 = f"📊 Head-to-head: {len(matches)} meetings — {a} {wa}W, {b} {wb}W, {draws}D"
+    line2 = f"Last: {last['date']} {last['home_team']} {last['home_score']}-{last['away_score']} {last['away_team']}"
+    return line1 + "\\n" + line2
 
 # ---------- أسماء المنتخبات بالعربي ----------
 AR = {
@@ -67,6 +114,7 @@ def fold(line):
     return "\r\n".join(out)
 
 def main():
+    h2h = load_h2h()
     with urllib.request.urlopen(SOURCE, timeout=30) as r:
         data = json.loads(r.read().decode("utf-8"))
     matches = data["matches"]
@@ -103,17 +151,12 @@ def main():
             summary = f"{t1} vs {t2}"
 
         # ---- بناء الوصف ----
-        info_bits = []
-        if ground: info_bits.append(f"🏟️ {ground}")
-        if group:  info_bits.append(f"👥 {group}")
         desc_lines = []
-        if info_bits:
-            desc_lines.append("  |  ".join(info_bits))
 
         if played:
             ht = score.get("ht")
             if ht and len(ht) == 2:
-                desc_lines.append(f"الشوط الأول / HT: {ht[0]} - {ht[1]}")
+                desc_lines.append(f"HT: {ht[0]} - {ht[1]}")
 
             def scorers(goals):
                 out = []
@@ -130,6 +173,13 @@ def main():
                 desc_lines.append(f"⚽ {m.get('team1','')}: " + "، ".join(g1))
             if g2:
                 desc_lines.append(f"⚽ {m.get('team2','')}: " + "، ".join(g2))
+        else:
+            # مباراة لم تُلعب بعد: نضيف السجل التاريخي (للمنتخبات المعروفة فقط)
+            raw1, raw2 = m.get("team1",""), m.get("team2","")
+            # نتجاهل رموز الإقصائيات (W91, Winner Group A...)
+            known = raw1 in AR and raw2 in AR
+            if known:
+                desc_lines.append(h2h_text(raw1, raw2, h2h))
 
         desc_lines.append(f"{stage} | FIFA World Cup 2026")
         desc = "\\n".join(desc_lines)
