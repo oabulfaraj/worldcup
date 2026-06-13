@@ -89,16 +89,51 @@ def main():
         uid = f"wc2026-m{uid_key:03d}@worldcup-friends"
 
         t1, t2 = team_name(m.get("team1","TBD")), team_name(m.get("team2","TBD"))
-        # النتيجة لو متوفرة
-        s1 = m.get("score1"); s2 = m.get("score2")
-        if s1 is not None and s2 is not None:
-            summary = f"{t1} {s1} - {s2} {t2}"
+        stage = round_label(m.get("round",""), m.get("group"))
+        ground = m.get("ground","")
+        group = m.get("group","")
+
+        # ---- النتيجة (من score.ft) ----
+        score = m.get("score") or {}
+        ft = score.get("ft")
+        played = bool(ft and len(ft) == 2)
+
+        if played:
+            summary = f"{t1} {ft[0]} - {ft[1]} {t2}"
         else:
             summary = f"{t1} vs {t2}"
 
-        stage = round_label(m.get("round",""), m.get("group"))
-        ground = m.get("ground","")
-        desc = f"{stage} | FIFA World Cup 2026"
+        # ---- بناء الوصف ----
+        info_bits = []
+        if ground: info_bits.append(f"🏟️ {ground}")
+        if group:  info_bits.append(f"👥 {group}")
+        desc_lines = []
+        if info_bits:
+            desc_lines.append("  |  ".join(info_bits))
+
+        if played:
+            ht = score.get("ht")
+            if ht and len(ht) == 2:
+                desc_lines.append(f"الشوط الأول / HT: {ht[0]} - {ht[1]}")
+
+            def scorers(goals):
+                out = []
+                for g in goals or []:
+                    nm = g.get("name","").strip()
+                    mn = g.get("minute","")
+                    if nm:
+                        out.append(f"{nm} {mn}'" if mn else nm)
+                return out
+
+            g1 = scorers(m.get("goals1"))
+            g2 = scorers(m.get("goals2"))
+            if g1:
+                desc_lines.append(f"⚽ {m.get('team1','')}: " + "، ".join(g1))
+            if g2:
+                desc_lines.append(f"⚽ {m.get('team2','')}: " + "، ".join(g2))
+
+        desc_lines.append(f"{stage} | FIFA World Cup 2026")
+        desc = "\\n".join(desc_lines)
 
         L += ["BEGIN:VEVENT", f"UID:{uid}", f"DTSTAMP:{now}",
               f"DTSTART:{start.strftime('%Y%m%dT%H%M%SZ')}",
