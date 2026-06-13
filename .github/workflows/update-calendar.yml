@@ -2,8 +2,8 @@ name: تحديث تقويم كأس العالم / Update World Cup Calendar
 
 on:
   schedule:
-    # يشتغل كل 6 ساعات تلقائياً (بتوقيت UTC)
-    - cron: "0 */6 * * *"
+    # يشتغل كل ساعة تلقائياً (بتوقيت UTC)
+    - cron: "0 * * * *"
   workflow_dispatch:   # يسمح بالتشغيل اليدوي من زر في GitHub
 
 permissions:
