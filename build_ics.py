@@ -89,9 +89,32 @@ ROUND_AR = {
     "Match for third place":"تحديد المركز الثالث","Final":"النهائي",
 }
 
+# ---------- أعلام المنتخبات (emoji) ----------
+FLAG = {
+    "Mexico":"🇲🇽","South Africa":"🇿🇦","South Korea":"🇰🇷",
+    "Czech Republic":"🇨🇿","Czechia":"🇨🇿","Canada":"🇨🇦",
+    "Bosnia and Herzegovina":"🇧🇦","Bosnia-Herzegovina":"🇧🇦","Bosnia & Herzegovina":"🇧🇦",
+    "United States":"🇺🇸","USA":"🇺🇸","Paraguay":"🇵🇾","Qatar":"🇶🇦",
+    "Switzerland":"🇨🇭","Brazil":"🇧🇷","Morocco":"🇲🇦","Haiti":"🇭🇹",
+    "Scotland":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","Australia":"🇦🇺","Turkey":"🇹🇷","Türkiye":"🇹🇷","Turkiye":"🇹🇷",
+    "Germany":"🇩🇪","Curacao":"🇨🇼","Curaçao":"🇨🇼","Netherlands":"🇳🇱","Japan":"🇯🇵",
+    "Ivory Coast":"🇨🇮","Côte d'Ivoire":"🇨🇮","Ecuador":"🇪🇨","Sweden":"🇸🇪","Tunisia":"🇹🇳",
+    "Spain":"🇪🇸","Cape Verde":"🇨🇻","Cabo Verde":"🇨🇻","Belgium":"🇧🇪","Egypt":"🇪🇬",
+    "Saudi Arabia":"🇸🇦","Uruguay":"🇺🇾","Iran":"🇮🇷","IR Iran":"🇮🇷","New Zealand":"🇳🇿",
+    "France":"🇫🇷","Senegal":"🇸🇳","Iraq":"🇮🇶","Norway":"🇳🇴","Argentina":"🇦🇷",
+    "Algeria":"🇩🇿","Austria":"🇦🇹","Jordan":"🇯🇴","Portugal":"🇵🇹",
+    "DR Congo":"🇨🇩","Congo DR":"🇨🇩","England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","Croatia":"🇭🇷","Ghana":"🇬🇭",
+    "Panama":"🇵🇦","Uzbekistan":"🇺🇿","Colombia":"🇨🇴",
+}
+
+def flag(t):
+    return FLAG.get((t or "").strip(), "")
+
 def team_name(t):
-    """أسماء المنتخبات بالإنجليزي فقط (يرجع الرمز كما هو لو إقصائيات: W91...)"""
-    return (t or "").strip()
+    """اسم المنتخب بالإنجليزي مع علمه (يرجع الرمز كما هو لو إقصائيات: W91...)"""
+    t = (t or "").strip()
+    fl = FLAG.get(t, "")
+    return f"{fl} {t}".strip() if fl else t
 
 def round_label(r, group):
     if r and r.startswith("Matchday"):
