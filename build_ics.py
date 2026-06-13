@@ -43,9 +43,8 @@ ROUND_AR = {
 }
 
 def team_name(t):
-    """ثنائي اللغة لو معروف، وإلا يرجع الرمز كما هو (W91, Winner Group A...)"""
-    t = (t or "").strip()
-    return f"{AR[t]} {t}" if t in AR else t
+    """أسماء المنتخبات بالإنجليزي فقط (يرجع الرمز كما هو لو إقصائيات: W91...)"""
+    return (t or "").strip()
 
 def round_label(r, group):
     if r and r.startswith("Matchday"):
