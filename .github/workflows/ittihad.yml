@@ -1,0 +1,39 @@
+name: Update Ittihad Calendar
+
+on:
+  schedule:
+    - cron: "* * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build Ittihad ICS
+        env:
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+        run: python build_ittihad.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "ittihad-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if [ -n "$(git status --porcelain worldcup2026.ics)" ]; then
+            git add worldcup2026.ics
+            git commit -m "Auto-update Ittihad $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Updated."
+          else
+            echo "No changes."
+          fi
