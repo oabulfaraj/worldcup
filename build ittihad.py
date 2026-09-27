@@ -15,7 +15,8 @@ HEAD = {"x-apisports-key": KEY, "User-Agent": "ittihad-cal/1.0"}
 TEAM = 2938          # Al-Ittihad FC (men, Jeddah)
 SEASON = "2026"      # موسم API-Football الذي يغطّي 2026/2027
 SEASON_START = "2026-07-01"  # نعرض فقط مباريات الموسم الحالي (يوليو 2026 فصاعداً)
-OUT = "ittihad.ics"
+# نكتب على نفس ملف المونديال حتى يجد المشتركون القدامى مباريات الاتحاد تلقائياً
+OUT = "worldcup2026.ics"
 
 # ---------- ترجمة البطولات ----------
 COMP_AR = {
@@ -97,6 +98,16 @@ def main():
          "X-WR-TIMEZONE:UTC",
          "X-WR-CALDESC:Al-Ittihad Jeddah - all competitions, auto-updated",
          "REFRESH-INTERVAL;VALUE=DURATION:PT1H", "X-PUBLISHED-TTL:PT1H"]
+
+    # ---- حدث ترحيبي (يظهر للمشتركين عند تحوّل التقويم لمباريات الاتحاد) ----
+    today = datetime.now(timezone.utc).strftime("%Y%m%d")
+    L += ["BEGIN:VEVENT",
+          "UID:ittihad-welcome-2026@omar-calendar",
+          f"DTSTAMP:{now}",
+          f"DTSTART;VALUE=DATE:{today}",
+          fold("SUMMARY:👋 Welcome to Al-Ittihad Calendar 🟡⚫"),
+          fold("DESCRIPTION:Enjoy following George Ilenikhena and his teammates — all competitions and results 🟡⚫"),
+          "TRANSP:TRANSPARENT", "END:VEVENT"]
 
     count = 0
     for f in fixtures:
