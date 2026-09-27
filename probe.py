@@ -4,7 +4,7 @@ import json, os, urllib.request
 
 KEY = os.environ.get("APIFOOTBALL_KEY", "")
 BASE = "https://v3.football.api-sports.io"
-HEAD = {"x-apisports-key": KEY, "User-Agent": "probe/5.0"}
+HEAD = {"x-apisports-key": KEY, "User-Agent": "probe/6.0"}
 
 def get(path):
     req = urllib.request.Request(BASE + path, headers=HEAD)
@@ -15,26 +15,21 @@ TEAM = 2938
 
 for season in ("2026", "2025"):
     print("=" * 55)
-    print(f"Season {season}:")
+    print(f"season={season}:")
     try:
         d = get(f"/fixtures?team={TEAM}&season={season}")
         resp = d.get("response", [])
-        print(f"  total fixtures: {len(resp)}")
-        print("  errors:", d.get("errors"))
-        if resp:
-            comps = sorted(set(f.get("league", {}).get("name", "?") for f in resp))
-            print("  competitions:", ", ".join(comps))
-            for f in resp[:3]:
-                lg = f.get("league", {}).get("name", "?")
-                h = f.get("teams", {}).get("home", {}).get("name", "?")
-                a = f.get("teams", {}).get("away", {}).get("name", "?")
-                dt = f.get("fixture", {}).get("date", "?")
-                st = f.get("fixture", {}).get("status", {}).get("short", "?")
-                gh = f.get("goals", {}).get("home")
-                ga = f.get("goals", {}).get("away")
-                print(f"    {dt[:16]} | {h} {gh}-{ga} {a} | {lg} | {st}")
+        dates = sorted(f.get("fixture", {}).get("date", "")[:10] for f in resp if f.get("fixture", {}).get("date"))
+        print(f"  total: {len(resp)}")
+        if dates:
+            print(f"  earliest match: {dates[0]}")
+            print(f"  latest match:   {dates[-1]}")
+        current = [x for x in dates if x >= "2026-07-01"]
+        print(f"  matches from 2026-07-01 onward: {len(current)}")
+        if current:
+            print(f"    first current-season date: {current[0]}")
     except Exception as e:
         print("  error:", e)
 
 print("=" * 55)
-print("probe v5 done.")
+print("probe v6 done.")
