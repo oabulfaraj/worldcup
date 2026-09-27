@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Nun Academy Calendar 2026/2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0f2c52; --navy-d:#0a1f3c; --gold:#c9a45c; --gold-b:#e0bd77;
+    --cream:#f4efe4; --ink:#e9edf3; --line:rgba(201,164,92,.30);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{background:var(--navy-d)}
+  body{
+    font-family:'Manrope',sans-serif;
+    background:
+      radial-gradient(1000px 500px at 80% -10%, rgba(201,164,92,.12), transparent 60%),
+      var(--navy-d) !important;
+    color:var(--ink);min-height:100vh;overflow-x:hidden;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:44px 22px 80px}
+  .logo{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+  .logo .ring{width:52px;height:52px;border-radius:50%;border:3px solid var(--gold);position:relative;flex:0 0 auto}
+  .logo .ring::after{content:"";position:absolute;top:6px;right:8px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+  .logo .name{font-family:'Fraunces',serif;font-weight:700;font-size:22px;color:var(--cream);letter-spacing:.5px;line-height:1.1}
+  .logo .name small{display:block;font-family:'Manrope';font-weight:600;font-size:12px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+  .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:100px;padding:7px 16px;font-size:13px;font-weight:700;color:var(--gold-b);background:rgba(201,164,92,.06);margin-bottom:22px}
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+  h1{font-family:'Fraunces',serif;font-size:clamp(38px,9vw,62px);line-height:1.02;font-weight:700;color:var(--cream);margin-bottom:8px;letter-spacing:.3px}
+  h1 span{color:var(--gold-b)}
+  .initiative{display:inline-flex;align-items:center;gap:9px;margin:14px 0 22px;padding:9px 18px;border:1px solid var(--line);border-radius:100px;background:linear-gradient(135deg,rgba(201,164,92,.12),rgba(201,164,92,.03));font-size:15px;font-weight:700;color:var(--ink)}
+  .initiative b{color:var(--gold-b);font-weight:800}
+  .lead{font-size:clamp(16px,4.2vw,19px);line-height:1.65;color:rgba(233,237,243,.8);max-width:580px;margin-bottom:30px}
+  .card{background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:22px;padding:30px 26px;margin-bottom:20px}
+  .cta{display:flex;flex-direction:column;gap:14px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;border-radius:16px;font-weight:800;font-size:19px;padding:20px 24px;transition:transform .15s}
+  .btn-main{background:linear-gradient(135deg,var(--gold-b),var(--gold));color:#2a1e08;box-shadow:0 12px 40px -12px rgba(201,164,92,.5)}
+  .btn-main:active{transform:scale(.98)}
+  .btn-sub{font-size:13px;font-weight:600;opacity:.75;display:block;margin-top:2px}
+  .btn-ghost{background:rgba(201,164,92,.06);border:1px solid var(--line);color:var(--gold-b);font-size:15px;font-weight:600}
+  .icn{font-size:24px}
+  .copied{background:#2f9e5a!important;color:#fff!important}
+  .note{font-size:13px;color:rgba(233,237,243,.45);line-height:1.7;margin-top:12px}
+  .steps{counter-reset:s;list-style:none;margin-top:6px}
+  .steps li{counter-increment:s;position:relative;padding:14px 4px 14px 50px;border-bottom:1px solid rgba(201,164,92,.12);font-size:15.5px;line-height:1.6;color:rgba(233,237,243,.85)}
+  .steps li:last-child{border-bottom:none}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:13px;width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--navy-d);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+  .sec-title{font-family:'Fraunces',serif;font-weight:700;font-size:20px;margin-bottom:4px;color:var(--gold-b)}
+  .sec-title-sub{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:rgba(233,237,243,.4);margin-bottom:16px;font-weight:700}
+  .relevant-tag{display:inline-block;margin-bottom:12px;font-size:11.5px;font-weight:800;color:var(--navy-d);background:var(--gold-b);padding:4px 11px;border-radius:100px}
+  .card.dimmed{opacity:.42;filter:saturate(.5)}
+  .disc{font-size:12.5px;color:rgba(233,237,243,.4);line-height:1.7;margin-top:8px;padding:14px 16px;border:1px dashed var(--line);border-radius:14px}
+  .foot{text-align:center;margin-top:34px;font-size:12.5px;color:rgba(233,237,243,.3)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">
+      <div class="ring"></div>
+      <div class="name">N&uuml;n Academy<small>Kunskapsskolan, Jeddah</small></div>
+    </div>
+
+    <span class="badge"><span class="dot"></span> Academic Year 2026/2027</span>
+    <h1>School <span>Calendar</span></h1>
+    <div class="initiative"><span>&#x1F393;</span> An initiative by <b>Abulfaraj Girls</b> (Najah, Sultana &amp; Fahda)</div>
+    <p class="lead">Subscribe once and the full N&uuml;n Academy calendar drops into your phone &mdash; term dates, holidays, events, and half-days. In your local time, and any update reaches you automatically.</p>
+
+    <div class="card">
+      <div class="cta">
+        <a class="btn btn-main" id="subBtn" href="#">
+          <span class="icn">&#x1F4C5;</span>
+          <span id="subLabel">Subscribe now
+            <span class="btn-sub" id="subSub">Add to iPhone / iPad Calendar</span>
+          </span>
+        </a>
+        <a class="btn btn-ghost" id="copyBtn" href="#">
+          <span class="icn">&#x1F517;</span><span id="copyLabel">Copy subscription link</span>
+        </a>
+        <a class="btn btn-ghost" id="dlBtn" href="#">
+          <span class="icn">&#x2B07;&#xFE0F;</span><span>Download file manually</span>
+        </a>
+      </div>
+      <p class="note" id="ctaNote">Detecting your device&hellip;</p>
+    </div>
+
+    <div class="card" id="iosCard">
+      <div class="sec-title">How to subscribe on iPhone</div>
+      <div class="sec-title-sub">iPhone / iPad</div>
+      <ol class="steps">
+        <li>Tap the gold &ldquo;Subscribe now&rdquo; button above.</li>
+        <li>iPhone asks &ldquo;Subscribe to this calendar?&rdquo; &mdash; tap <b>Subscribe</b>.</li>
+        <li>Pick a calendar and tap <b>Add</b>.</li>
+        <li>Done! All school dates appear and stay up to date.</li>
+      </ol>
+    </div>
+
+    <div class="card" id="androidCard">
+      <div class="sec-title">Android / Google Calendar</div>
+      <div class="sec-title-sub">Android</div>
+      <ol class="steps">
+        <li>Tap <b>&ldquo;Copy subscription link&rdquo;</b> above.</li>
+        <li>Open <b>calendar.google.com</b> in a browser.</li>
+        <li>Settings &#x2699;&#xFE0F; &rarr; &ldquo;Add calendar&rdquo; &rarr; &ldquo;From URL&rdquo;.</li>
+        <li>Paste the link and tap Add.</li>
+      </ol>
+    </div>
+
+    <p class="disc">Note: Some holiday dates (Ramadan, Eid) are tentative. The Ministry of Education has not yet released the official academic calendar, so dates may change based on the MOE&rsquo;s final announcement. Any update will reach subscribers automatically.</p>
+
+    <p class="foot">&#x1F393; Made as an initiative between parents &middot; Times shown in your device&rsquo;s local timezone<br>N&uuml;n Academy Jeddah &mdash; 2026/2027</p>
+  </div>
+
+<script>
+  const ICS_HTTPS = "https://oabulfaraj.github.io/worldcup/school.ics";
+  const webcal = ICS_HTTPS.replace(/^https?:\/\//,"webcal://");
+  const subBtn=document.getElementById("subBtn"), subSub=document.getElementById("subSub"),
+        copyBtn=document.getElementById("copyBtn"), copyLabel=document.getElementById("copyLabel"),
+        dlBtn=document.getElementById("dlBtn"), ctaNote=document.getElementById("ctaNote"),
+        iosCard=document.getElementById("iosCard"), androidCard=document.getElementById("androidCard");
+  dlBtn.href = ICS_HTTPS;
+  const ua = navigator.userAgent||"";
+  const isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  const isAndroid = /Android/i.test(ua);
+  function tag(card){const t=document.createElement("span");t.className="relevant-tag";t.textContent="\u{1F448} This is your way";card.insertBefore(t,card.firstChild);}
+  if(isIOS){
+    subBtn.href=webcal;
+    ctaNote.textContent="Tap the gold button, then tap Subscribe when iPhone asks. Done.";
+    androidCard.classList.add("dimmed"); tag(iosCard);
+  } else if(isAndroid){
+    subBtn.style.display="none"; copyBtn.style.order="-1";
+    ctaNote.textContent="Copy the link, then open calendar.google.com and add it via \u201CFrom URL\u201D.";
+    iosCard.classList.add("dimmed"); tag(androidCard);
+  } else {
+    subBtn.href=webcal; subSub.textContent="Subscribe via webcal";
+    ctaNote.textContent="iPhone/Mac: tap the gold button. Android/Google: copy the link and add it in calendar.google.com.";
+  }
+  copyBtn.addEventListener("click", async(e)=>{
+    e.preventDefault();
+    try{ await navigator.clipboard.writeText(ICS_HTTPS); }
+    catch{ const t=document.createElement("textarea");t.value=ICS_HTTPS;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t); }
+    const o=copyLabel.textContent; copyBtn.classList.add("copied"); copyLabel.textContent="\u2713 Link copied!";
+    setTimeout(()=>{copyBtn.classList.remove("copied");copyLabel.textContent=o;},2200);
+  });
+</script>
+</body>
+</html>
