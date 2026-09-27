@@ -16,4 +16,6 @@ jobs:
           python-version: "3.12"
 
       - name: Run probe
+        env:
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
         run: python probe.py
