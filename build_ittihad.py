@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+build_ittihad.py - Al-Ittihad Jeddah calendar, auto-updated.
+API-Football: fixtures, results, Ittihad goals/cards/subs, possession, standings.
+Cache: finished matches (>1 day) read from saved file, not re-fetched.
+"""
 import json, os, urllib.request, time
 from datetime import datetime, timedelta, timezone
 
 KEY = os.environ.get("APIFOOTBALL_KEY", "")
 BASE = "https://v3.football.api-sports.io"
-HEAD = {"x-apisports-key": KEY, "User-Agent": "ittihad-cal/3.0"}
+HEAD = {"x-apisports-key": KEY, "User-Agent": "ittihad-cal/3.2"}
 TEAM = 2938
 SEASON = "2026"
 SEASON_START = "2026-07-01"
 PRO_LEAGUE_ID = 307
 OUT = "worldcup2026.ics"
-CACHE = "events_cache.json"
+CACHE = "events_cache_v3.json"
 ITTIHAD_NAMES = {"al-ittihad fc","al ittihad","al-ittihad"}
 
 SAUDI_CLUBS = {
@@ -33,10 +38,6 @@ FOREIGN_FLAG = {
     "esteghlal":"🇮🇷","persepolis":"🇮🇷","sepahan":"🇮🇷","tractor":"🇮🇷",
     "al-shorta":"🇮🇶","al shorta":"🇮🇶","air force club":"🇮🇶",
     "al-quwa al-jawiya":"🇮🇶","al-kuwait":"🇰🇼","al kuwait":"🇰🇼","sharjah":"🇦🇪",
-}
-COUNTRY_FLAG = {
-    "United Arab Emirates":"🇦🇪","Qatar":"🇶🇦","Uzbekistan":"🇺🇿","Iran":"🇮🇷",
-    "Iraq":"🇮🇶","Kuwait":"🇰🇼","Egypt":"🇪🇬","Spain":"🇪🇸","Japan":"🇯🇵",
 }
 COMP_AR = {
     "Pro League":"دوري روشن","King's Cup":"كأس الملك","Super Cup":"كأس السوبر",
@@ -99,7 +100,19 @@ def get_standings():
     except Exception as e: print("standings error:",e)
     return out
 
+def fetch_possession(fid):
+    """Ball possession % per team name."""
+    d=fetch(f"/fixtures/statistics?fixture={fid}")
+    poss={}
+    for blk in (d or {}).get("response",[]):
+        tm=blk.get("team",{}).get("name") or ""
+        for st in blk.get("statistics",[]):
+            if st.get("type")=="Ball Possession" and st.get("value"):
+                poss[tm]=str(st.get("value"))
+    return poss
+
 def fetch_events(fid):
+    """Ittihad goals/cards/subs only, plus possession."""
     d=fetch(f"/fixtures/events?fixture={fid}")
     goals=[]; itt_cards=[]; subs=[]
     for e in (d or {}).get("response",[]):
@@ -107,16 +120,19 @@ def fetch_events(fid):
         mn=e.get("time",{}).get("elapsed")
         pl=e.get("player",{}).get("name") or ""
         tm=e.get("team",{}).get("name") or ""
+        itt=is_ittihad(tm)
         if typ=="Goal" and "Missed" not in dtl:
-            og=" (OG)" if "Own" in dtl else ""
-            goals.append([mn,pl+og])
-        elif typ=="Card" and is_ittihad(tm):
+            own="Own" in dtl
+            if (itt and not own) or (not itt and own):
+                goals.append([mn,pl])
+        elif typ=="Card" and itt:
             ic = "🟥" if "Red" in dtl else "🟨"
             itt_cards.append([mn,pl,ic])
-        elif typ=="subst":
+        elif typ=="subst" and itt:
             inp=pl; outp=e.get("assist",{}).get("name") or ""
             subs.append([mn,inp,outp])
-    return {"goals":goals,"cards":itt_cards,"subs":subs}
+    poss=fetch_possession(fid)
+    return {"goals":goals,"cards":itt_cards,"subs":subs,"poss":poss}
 
 def get_events(fid, start_utc, cache):
     key=str(fid)
@@ -171,17 +187,42 @@ def main():
         comp=lg.get("name",""); comp_disp=f"{COMP_AR.get(comp,comp)} / {comp}" if comp in COMP_AR else comp
         desc=[f"🏆 {comp_disp}"]
 
+        ev=None
         if played:
             ev=get_events(fx.get("id"),start,cache)
-            g=[f"{p} {m}'" for m,p in ev.get("goals",[]) if m is not None]
-            if g: desc.append("⚽ "+", ".join(g))
-            c=[f"{ic} {p} {m}'" for m,p,ic in ev.get("cards",[]) if m is not None]
-            if c: desc.append("Cards (Ittihad): "+", ".join(c))
-            s=[f"{inp}⬆️{outp}⬇️ {m}'" for m,inp,outp in ev.get("subs",[]) if m is not None]
-            if s: desc.append("🔄 "+", ".join(s))
+            gmap={}
+            for m,p in ev.get("goals",[]):
+                if m is None: continue
+                gmap.setdefault(p,[]).append(m)
+            if gmap:
+                desc.append("")
+                desc.append("⚽ Goals:")
+                for p,mins in gmap.items():
+                    mins=sorted(mins)
+                    desc.append(f"   {p} "+", ".join(f"{x}'" for x in mins))
+            cards=[(m,p,ic) for m,p,ic in ev.get("cards",[]) if m is not None]
+            if cards:
+                desc.append("")
+                desc.append("Cards (Ittihad):")
+                for m,p,ic in cards:
+                    desc.append(f"   {ic} {p} {m}'")
+            subs=[(m,inp,outp) for m,inp,outp in ev.get("subs",[]) if m is not None]
+            if subs:
+                desc.append("")
+                desc.append("🔄 Subs (Ittihad):")
+                for m,inp,outp in subs:
+                    desc.append(f"   {inp} ⬆️ {outp} ⬇️ {m}'")
+
+        tail=[]
+        if played and ev:
+            poss=ev.get("poss",{}) or {}
+            ph=poss.get(home); pa=poss.get(away)
+            if ph and pa:
+                tail.append(f"⚖️ Possession — {home}: {ph} · {away}: {pa}")
 
         if comp=="Pro League":
-            stand_key=f"stand_{fx.get('id')}"
+            fid=str(fx.get("id"))
+            stand_key=f"stand_{fid}"
             if played:
                 if stand_key in cache:
                     frozen=cache[stand_key]
@@ -193,7 +234,11 @@ def main():
             else:
                 hs=standings.get(home.strip().lower()); as_=standings.get(away.strip().lower())
             if hs and as_:
-                desc.append(f"📊 {home}: #{hs[0]} ({hs[1]} pts) · {away}: #{as_[0]} ({as_[1]} pts)")
+                tail.append(f"📊 {home}: #{hs[0]} ({hs[1]} pts) · {away}: #{as_[0]} ({as_[1]} pts)")
+
+        if tail:
+            desc.append("")
+            desc.extend(tail)
 
         d="\\n".join(desc)
         venue=fx.get("venue",{}).get("name",""); city=fx.get("venue",{}).get("city","")
