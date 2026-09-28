@@ -10,7 +10,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:ittihad-welcome-2026@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:👋 Welcome to Al-Ittihad Calendar 🟡⚫
 DESCRIPTION:Enjoy following George Ilenikhena and his teammates — all c
@@ -19,448 +19,568 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1567327@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260811T160000Z
 DTEND:20260811T180000Z
-SUMMARY:🇸🇦 Al-Jazira 1 - 4 🟡⚫ Al-Ittihad FC
+SUMMARY:🇦🇪 Al-Jazira 1 - 4 🟡⚫ Al-Ittihad FC
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
- s League Elite
+ s League Elite\n⚽ S. Bergwijn 12', S. Bergwijn 38', H. Aouar 54', M. A
+ l Sahafi 69', S. Banza 80'\nCards (Ittihad): 🟨 Farhah Ali Alshamrani 
+ 29', 🟨 Jan-Carlo Simić 44', 🟨 Stephane Keller 63'\n🔄 F. Al Sha
+ mrani⬆️A. Al Ghamdi⬇️ 46', M. Diaby⬆️M. Al Sahafi⬇️ 65',
+  Bruno⬆️M. Jatta⬇️ 68', M. Meloni⬆️S. Malkocoglu⬇️ 68', 
+ Vinicius Mello⬆️R. Akonnor⬇️ 68', J. Simic⬆️A. Al Julaydan
+ ️ 72', Y. En Nesyri⬆️G. Ilenikhena⬇️ 72', M. Rabii⬆️Igor 
+ Serrote⬇️ 76', S. Bergwijn⬆️R. Kaabi⬇️ 81', Milson⬆️E. S
+ agna⬇️ 86'
 LOCATION:Mohammad Bin Zayed Stadium, Abu Dhabi
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1584914@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260721T170000Z
 DTEND:20260721T190000Z
-SUMMARY:🇸🇦 Orlando Pirates 2 - 3 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 ودية / Friendlies Clubs
+SUMMARY:Orlando Pirates 2 - 3 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 ودية / Friendlies Clubs\n⚽ Y. En Nesyri 10', T. Mb
+ atha 27', M. Diaby 45', G. Ilenikhena 85', Y. Mbuthuma 90'\nCards (Ittih
+ ad): 🟨  34', 🟨  68', 🟨  89'
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1598541@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260725T170000Z
 DTEND:20260725T190000Z
-SUMMARY:🇸🇦 Las Palmas 1 - 2 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 ودية / Friendlies Clubs
+SUMMARY:Las Palmas 1 - 2 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 ودية / Friendlies Clubs\n⚽ M. Diaby 15', Roger 49'
+ , I. Medina 77'\nCards (Ittihad): 🟨  27', 🟨  51', 🟨  81', 🟥 
+  90'
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1598562@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260730T170000Z
 DTEND:20260730T190000Z
-SUMMARY:🇸🇦 Malaga 2 - 2 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 ودية / Friendlies Clubs
+SUMMARY:Malaga 2 - 2 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 ودية / Friendlies Clubs\n⚽ S. Bergwijn 1', G. Ilen
+ ikhena 34', A. Nino 54', J. Munoz 58'\nCards (Ittihad): 🟨  80'\n🔄 
+ A. Recio⬆️A. Nino⬇️ 46', C. Puga⬆️J. Munoz⬇️ 46', J. Lob
+ ete⬆️I. Merino⬇️ 46', E. Jauregi⬆️J. Fernandez⬇️ 46', D.
+  Sanchez⬆️J. Salinas⬇️ 46', R. Rodriguez⬆️J. Otunenche⬇️
+  46', P. Arriaza⬆️H. Abaida⬇️ 46', Chupe⬆️C. Dotor⬇️ 46'
+ , D. Larrubia⬆️D. Lorenzo⬇️ 46', F. Calero⬆️J. Cruz⬇️ 46
+ ', ⬆️A. Ochoa⬇️ 73'
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1602979@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260815T180000Z
 DTEND:20260815T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC 1 - 1 🇸🇦 Al Kholood
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC 1 - 1 Al Kholood
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ Y. En Nesyri 43', J.
+  Domingues 52'\nCards (Ittihad): 🟥 Danilo Pereira 58', 🟨 Muhannad 
+ Shanqeeti 66'\n🔄 F. Al Shamrani⬆️R. Kaabi⬇️ 46', M. Diaby⬆
+ H. Kadesh⬇️ 62', A. Al Julaydan⬆️M. Al Shanqiti⬇️ 62', R. 
+ Solan⬆️A. Al Obaid⬇️ 64', J. Domingues⬆️I. Kortajarena⬇️
+  73', Y. En Nesyri⬆️M. Al Sahafi⬇️ 82', S. Pinas⬆️S. Al Sheh
+ ri⬇️ 86', H. Aouar⬆️A. Al Ghamdi⬇️ 90'\n📊 Al-Ittihad FC: 
+ #2 (17 pts) · Al Kholood: #7 (12 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1602985@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260821T180000Z
 DTEND:20260821T200000Z
-SUMMARY:🇸🇦 Al-Qadisiyah FC 0 - 1 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Qadisiyah FC 0 - 1 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ G. Ilenikhena 45'\nC
+ ards (Ittihad): 🟨 Dion Lopy 40', 🟨 Dion Lopy 47', 🟥 Dion Lopy 4
+ 7'\n🔄 R. Kaabi⬆️A. Al Ghamdi⬇️ 46', Otavio⬆️T. Reijnders
+ ️ 57', S. Bergwijn⬆️M. Ali⬇️ 57', G. Ilenikhena⬆️M. Al S
+ ahafi⬇️ 57', J. Thakri⬆️M. Al Qahtani⬇️ 71', M. Abu Al Shama
+ t⬆️T. Al Ammar⬇️ 79', M. Al Juwayr⬆️E. Houssa⬇️ 79', M. 
+ Retegui⬆️A. Al Salem⬇️ 80', Y. En Nesyri⬆️A. Al Julaydan⬇
+  87', H. Kadesh⬆️M. Barnawi⬇️ 90'\n📊 Al-Qadisiyah FC: #4 (1
+ 6 pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:EGO Stadium, Dammam
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1602991@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260824T180000Z
 DTEND:20260824T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC 3 - 2 🇸🇦 Al-Hazm
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC 3 - 2 Al-Hazm
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ A. Al Dwehe 18', S. 
+ Bergwijn 34', S. Bergwijn 41', S. Bendebka 59', S. Bergwijn 81'\nCards (
+ Ittihad): 🟨 Marwan Al-Sahafi 45', 🟨 Hassan Kadesh 50', 🟨 Faris 
+ Abdi 53'\n🔄 M. Al Sahafi⬆️A. Al Julaydan⬇️ 46', S. Keller⬆
+ H. Kadesh⬇️ 46', Y. En Nesyri⬆️G. Ilenikhena⬇️ 60', A. Al 
+ Dwehe⬆️A. Al Shamrani⬇️ 65', A. Al Nakhli⬆️M. Al Hamdani⬇
+  65', J. Simic⬆️S. Al Shehri⬇️ 73', S. Al Rashid⬆️F. Al Az
+ zmi⬇️ 77', A. Bah⬆️M. Al Yami⬇️ 77', S. Bergwijn⬆️R. Kaa
+ bi⬇️ 85', M. Ben Hamida⬆️A. Diakite⬇️ 88'\n📊 Al-Ittihad F
+ C: #2 (17 pts) · Al-Hazm: #10 (8 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603004@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260829T180000Z
 DTEND:20260829T200000Z
-SUMMARY:🇸🇦 Al-Fateh 0 - 0 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Fateh 0 - 0 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\nCards (Ittihad): 🟨 Ha
+ ssan Kadesh 45', 🟨 Faris Abdi 46', 🟨 Dion Lopy 55', 🟨 Jan-Carlo
+  Simić 76', 🟨 Houssem Aouar 90'\n🔄 A. Al Julaydan⬆️J. Simic
+ ️ 63', F. Abdi⬆️M. Fagihy⬇️ 63', F. Al Abdulwahed⬆️A. R. 
+ Al Khaibre⬇️ 65', F. Al Zubaidi⬆️S. Al Sharfa⬇️ 65', M. Ali
+ ️A. Al Ghamdi⬇️ 67', M. Al Sahafi⬆️G. Ilenikhena⬇️ 68', 
+ A. I. Al Khaibari⬆️Z. Al Jari⬇️ 89', W. Kanga⬆️A. Al Suwaile
+ m⬇️ 89', S. Bergwijn⬆️F. Al Shamrani⬇️ 89', S. Baattia⬆️
+ A. Al Masoud⬇️ 90'\n📊 Al-Fateh: #15 (3 pts) · Al-Ittihad FC: #2 
+ (17 pts)
 LOCATION:Al Fateh club stadium, Al-Hofuf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603016@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260905T180000Z
 DTEND:20260905T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC 2 - 1 🇸🇦 Al-Nassr
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC 2 - 1 Al-Nassr
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ G. Ilenikhena 4', G.
+  Ilenikhena 22', Angelo 36'\nCards (Ittihad): 🟨 Dion Lopy 53', 🟨 Y
+ oussef En-Nesyri 90'\n🔄 M. Ali⬆️R. Rios⬇️ 46', A. Al Julaydan
+ ⬆️M. Al Shanqiti⬇️ 53', S. Al Najdi⬆️S. Al Nasser⬇️ 60',
+  K. Coman⬆️A. Yahya⬇️ 60', G. Ilenikhena⬆️Y. En Nesyri⬇️
+  67', A. Al Ghamdi⬆️M. Al Sahafi⬇️ 67', Samu Costa⬆️A. Al Kh
+ aibari⬇️ 78', Angelo⬆️A. Al Hamdan⬇️ 78', S. Bergwijn⬆️R
+ . Kaabi⬇️ 82'\n📊 Al-Ittihad FC: #2 (17 pts) · Al-Nassr: #3 (16 p
+ ts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603021@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260908T180000Z
 DTEND:20260908T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC 2 - 1 🇸🇦 Al-Fayha
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC 2 - 1 Al-Fayha
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ G. Ilenikhena 43', J
+ ason Remeseiro 45', Y. En Nesyri 68'\nCards (Ittihad): 🟨 Jan-Carlo Si
+ mić 59'\n🔄 S. Bergwijn⬆️M. Al Sahafi⬇️ 46', J. Simic⬆️M.
+  Al Shanqiti⬇️ 62', A. Al Ghamdi⬆️Y. En Nesyri⬇️ 62', H. Aou
+ ar⬆️M. Fagihy⬇️ 75', A. Al Hussain⬆️M. Al Abdulmanam⬇️ 8
+ 1', M. Al Baqawi⬆️R. Enad⬇️ 82', G. Ilenikhena⬆️R. Kaabi⬇
+  86', A. Bamsaud⬆️T. Al Jaadi⬇️ 90', P. Oliveira⬆️Z. Al Sa
+ hafi⬇️ 90', Alfa Semedo⬆️M. Al Beshe⬇️ 90'\n📊 Al-Ittihad 
+ FC: #2 (17 pts) · Al-Fayha: #12 (6 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603028@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260911T154500Z
 DTEND:20260911T174500Z
-SUMMARY:🇸🇦 Al-Faisaly FC 1 - 3 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Faisaly FC 1 - 3 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n⚽ S. Bergwijn 28', Y. 
+ En Nesyri 43', Y. En Nesyri 59', T. Bongonda 87'\nCards (Ittihad): 🟨 
+ Hassan Kadesh 48'\n🔄 E. Al Muwallad⬆️T. Bongonda⬇️ 46', G. Il
+ enikhena⬆️G. Wijnaldum⬇️ 63', R. Rios⬆️M. Ali⬇️ 63', M. 
+ Al Shanqiti⬆️H. Al Zarie⬇️ 67', C. Bassogog⬆️A. Al Bishi⬇
+  67', F. Abdi⬆️M. Fagihy⬇️ 72', Y. En Nesyri⬆️S. Al Shehri
+ ⬇️ 72', J. Seoane⬆️S. Haddad⬇️ 80', A. Al Shereaf⬆️A. Fa
+ llatah⬇️ 80', S. Bergwijn⬆️M. Al Sahafi⬇️ 80'\n📊 Al-Faisa
+ ly FC: #16 (3 pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Al Majma'ah Sport City, Al Majmaah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603040@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261010T180000Z
 DTEND:20261010T200000Z
-SUMMARY:🇸🇦 Al-Hilal Saudi FC vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Hilal Saudi FC vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Hilal Saudi FC: 
+ #1 (18 pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Kingdom Arena, Riyadh
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603048@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261016T180000Z
 DTEND:20261016T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Shabab
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al Shabab
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al Shabab: #14 (4 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603055@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261020T180000Z
 DTEND:20261020T200000Z
-SUMMARY:🇸🇦 Al-Ettifaq vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Ettifaq vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ettifaq: #9 (11 
+ pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Abdullah Al Dabil Stadium
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603066@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261023T153000Z
 DTEND:20261023T173000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Diriyah
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al Diriyah
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al Diriyah: #8 (11 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603071@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261030T134500Z
 DTEND:20261030T154500Z
-SUMMARY:🇸🇦 Abha vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Abha vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Abha: #18 (2 pts) 
+  Al-Ittihad FC: #2 (17 pts)
 LOCATION:Prince Sultan bin Abdul Aziz Stadium, Abha
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603086@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261105T170000Z
 DTEND:20261105T190000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 NEOM
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs NEOM
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · NEOM: #5 (15 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603092@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261120T170000Z
 DTEND:20261120T190000Z
-SUMMARY:🇸🇦 Al Khaleej Saihat vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Khaleej Saihat vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Khaleej Saihat: 
+ #13 (5 pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Prince Mohamed bin Fahd Stadium, Dammam
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603102@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261126T170000Z
 DTEND:20261126T190000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Ahli Jeddah
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs 🐸 Al-Ahli Jeddah
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Ahli Jeddah: #6 (12 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603113@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261203T170000Z
 DTEND:20261203T190000Z
-SUMMARY:🇸🇦 Al Riyadh vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Riyadh vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Riyadh: #11 (8 p
+ ts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Prince Faisal bin Fahd Stadium, Riyadh
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603120@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261210T170000Z
 DTEND:20261210T190000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Taawon
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al Taawon
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al Taawon: #17 (3 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603131@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261214T170000Z
 DTEND:20261214T190000Z
-SUMMARY:🇸🇦 Al Kholood vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Kholood vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Kholood: #7 (12 
+ pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Al-Hazem Club Stadium, Ar Rass
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603138@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270211T190000Z
 DTEND:20270211T210000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Qadisiyah FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al-Qadisiyah FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Qadisiyah FC: #4 (16 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603146@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270218T190000Z
 DTEND:20270218T210000Z
-SUMMARY:🇸🇦 Al-Hazm vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Hazm vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Hazm: #10 (8 pts
+ ) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Al-Hazem Club Stadium, Ar Rass
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603157@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270225T190000Z
 DTEND:20270225T210000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Fateh
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al-Fateh
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Fateh: #15 (3 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603167@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270311T180000Z
 DTEND:20270311T200000Z
-SUMMARY:🇸🇦 Al-Nassr vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Nassr vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Nassr: #3 (16 pt
+ s) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:King Saud University Stadium, Riyadh
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603174@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270318T180000Z
 DTEND:20270318T200000Z
-SUMMARY:🇸🇦 Al-Fayha vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al-Fayha vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Fayha: #12 (6 pt
+ s) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:King Abdullah Sports City Stadium, Buraidah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603185@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270402T180000Z
 DTEND:20270402T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Faisaly FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al-Faisaly FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Faisaly FC: #16 (3 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603191@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270408T180000Z
 DTEND:20270408T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Hilal Saudi FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al-Hilal Saudi FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Hilal Saudi FC: #1 (18 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603204@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270415T180000Z
 DTEND:20270415T200000Z
-SUMMARY:🇸🇦 Al Shabab vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Shabab vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Shabab: #14 (4 p
+ ts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Al-Shabab Club Stadium, Riyadh
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603209@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270418T180000Z
 DTEND:20270418T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Ettifaq
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al-Ettifaq
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al-Ettifaq: #9 (11 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603216@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270422T180000Z
 DTEND:20270422T200000Z
-SUMMARY:🇸🇦 Al Diriyah vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Diriyah vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Diriyah: #8 (11 
+ pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Prince Turki bin Abdul Aziz Stadium, Riyadh
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603229@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270429T180000Z
 DTEND:20270429T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Abha
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Abha
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Abha: #18 (2 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603241@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270506T180000Z
 DTEND:20270506T200000Z
-SUMMARY:🇸🇦 NEOM vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:NEOM vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 NEOM: #5 (15 pts) 
+  Al-Ittihad FC: #2 (17 pts)
 LOCATION:King Khalid Sports City, Tabuk
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603248@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270512T180000Z
 DTEND:20270512T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Khaleej Saihat
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al Khaleej Saihat
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al Khaleej Saihat: #13 (5 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603251@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270520T180000Z
 DTEND:20270520T200000Z
-SUMMARY:🇸🇦 Al-Ahli Jeddah vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🐸 Al-Ahli Jeddah vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ahli Jeddah: #6 
+ (12 pts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603264@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270524T180000Z
 DTEND:20270524T200000Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Riyadh
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:🟡⚫ Al-Ittihad FC vs Al Riyadh
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al-Ittihad FC: #2 (
+ 17 pts) · Al Riyadh: #11 (8 pts)
 LOCATION:King Abdullah Sports City, Jeddah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1603277@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270528T180000Z
 DTEND:20270528T200000Z
-SUMMARY:🇸🇦 Al Taawon vs 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 دوري روشن / Pro League
+SUMMARY:Al Taawon vs 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 دوري روشن / Pro League\n📊 Al Taawon: #17 (3 p
+ ts) · Al-Ittihad FC: #2 (17 pts)
 LOCATION:Al Taawon Arena, Buraidah
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1604698@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260730T080000Z
 DTEND:20260730T100000Z
-SUMMARY:🇸🇦 Mallorca 4 - 2 🟡⚫ Al-Ittihad FC
-DESCRIPTION:🏆 ودية / Friendlies Clubs
+SUMMARY:Mallorca 4 - 2 🟡⚫ Al-Ittihad FC
+DESCRIPTION:🏆 ودية / Friendlies Clubs\n⚽ S. Darder 5', M. Borrel
+ l 15', A. Soumahoro 18', P. Torre 55', Z. Luvumbo 66', A. Al Bishri 75'\
+ nCards (Ittihad): 🟨 S. Al Shehri 40'\n🔄 A. Prats⬆️A. Fuentes
+ ️ 46', A. Soumahoro⬆️A. Raillo⬇️ 46', M. Borrell⬆️K. Kone
+ ⬇️ 46', A. Hawsawi⬆️J. Simic⬇️ 46', M. Barnawi⬆️N. Al Ja
+ daani⬇️ 46', M. Al Absi⬆️O. Al Mermesh⬇️ 59', P. Torre⬆️
+ T. Lato⬇️ 63', J. Virgili⬆️Z. Luvumbo⬇️ 63', M. Morey Bauza
+ ️A. Sala⬇️ 63', A. Roca⬆️M. Domenech⬇️ 63', A. Tenas⬆
+ Torreguitart Nil⬇️ 63', L. Orejuela⬆️M. Calatayud⬇️ 63', A
+ . Al Julaydan⬆️A. Al Fahmy⬇️ 67', F. Al Saqour⬆️A. Al Sahli
+ ️ 67', M. Valjent⬆️J. Olaizola⬇️ 77', S. Darder⬆️J. Garc
+ ia⬇️ 77'
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1629914@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20260914T160000Z
 DTEND:20260914T180000Z
-SUMMARY:🇸🇦 Al Shamal 1 - 1 🟡⚫ Al-Ittihad FC
+SUMMARY:🇶🇦 Al Shamal 1 - 1 🟡⚫ Al-Ittihad FC
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
- s League Elite
+ s League Elite\n⚽ Baghdad Bounedjah 63', Georginio Wijnaldum 90'\n🔄
+  Youssef En-Nesyri⬆️George Ilenikhena⬇️ 64', Ahmed Al-Ghamdi⬆
+ Georginio Wijnaldum⬇️ 64', Musab Khoder⬆️Michel Termanini⬇
+  79', Wesley Saïd⬆️Youssouf Sabaly⬇️ 80', Muhannad Al-Shanqeet
+ i⬆️Marwan Al-Sahafi⬇️ 82', Faris Abdi⬆️Mukhtar Ali⬇️ 82'
+ , Federico Bais⬆️Mowafak Awad⬇️ 83', Tiago Silva⬆️Ali Assada
+ lla⬇️ 87', Houssem Aouar⬆️Saleh Al-Shehri⬇️ 90'
 LOCATION:Al Bayt Stadium, Al Khor
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1629940@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261013T181500Z
 DTEND:20261013T201500Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Shabab Al Ahli Dubai
+SUMMARY:🟡⚫ Al-Ittihad FC vs 🇦🇪 Shabab Al Ahli Dubai
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Alinma Stadium, Jeddah
@@ -469,10 +589,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1629943@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261026T134500Z
 DTEND:20261026T154500Z
-SUMMARY:🇸🇦 Neftchi vs 🟡⚫ Al-Ittihad FC
+SUMMARY:🇺🇿 Neftchi vs 🟡⚫ Al-Ittihad FC
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Istiqlol Stadium, Fergana
@@ -481,10 +601,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1629964@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261102T181500Z
 DTEND:20261102T201500Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al Ain
+SUMMARY:🟡⚫ Al-Ittihad FC vs 🇦🇪 Al Ain
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Alinma Stadium, Jeddah
@@ -493,10 +613,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1629979@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261123T181500Z
 DTEND:20261123T201500Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Pakhtakor
+SUMMARY:🟡⚫ Al-Ittihad FC vs 🇺🇿 Pakhtakor
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Alinma Stadium, Jeddah
@@ -505,10 +625,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1630001@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20261207T160000Z
 DTEND:20261207T180000Z
-SUMMARY:🇸🇦 Al-Wasl FC vs 🟡⚫ Al-Ittihad FC
+SUMMARY:Al-Wasl FC vs 🟡⚫ Al-Ittihad FC
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Zabeel Stadium, Dubai
@@ -517,10 +637,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1630010@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270208T181500Z
 DTEND:20270208T201500Z
-SUMMARY:🟡⚫ Al-Ittihad FC vs 🇸🇦 Al-Gharafa
+SUMMARY:🟡⚫ Al-Ittihad FC vs 🇶🇦 Al-Gharafa
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Alinma Stadium, Jeddah
@@ -529,10 +649,10 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:ittihad-1630028@omar-calendar
-DTSTAMP:20260928T064821Z
+DTSTAMP:20260928T074834Z
 DTSTART:20270215T181500Z
 DTEND:20270215T201500Z
-SUMMARY:🇸🇦 Al Sadd vs 🟡⚫ Al-Ittihad FC
+SUMMARY:🇶🇦 Al Sadd vs 🟡⚫ Al-Ittihad FC
 DESCRIPTION:🏆 دوري أبطال آسيا للنخبة / AFC Champion
  s League Elite
 LOCATION:Jassim Bin Hamad Stadium, Doha
